@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <title>BootStrap响应式网页</title>
+    <link rel="stylesheet" type="text/css" href="./iconfont/iconfont.css">
+    <!--<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">-->
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+        }
+        .header{
+            position: relative;
+            width: 100%;
+            height: 27em;
+            background-color: #27ae60;
+            color: white;
+            text-align: center;
+        }
+        .header .top{
+            position: relative;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            width: 100%;
+        }
+        .header .top .left{
+            position: relative;
+            display: inline-block;
+            text-align: right;
+        }
+        .header .top .right{
+            position: relative;
+            display: inline-block;
+            text-align: left;
+        }
+        .header .top .right li{width: 4em; float: left;}
+        .p1{font-family: 微软雅黑;font-weight: bold;}
+        .p2{font-size: 1.5em;margin: 0.4em 0em 0.6em 0em;}
+        #search{
+            position: relative;
+            height: 2em;
+            background-color: white;
+            margin: 1.5em auto;
+            padding: 0.5em 0em;
+            text-align: right;
+        }
+        #search input{
+            height: 2em;
+            font-size: 1em;
+            text-align: center;
+            outline: none;
+        }
+        #search button{
+            height: 2em;
+            width: 3em;
+            text-align: center;
+            background: none;
+            outline: none;
+        }
+        #search i{font-size: 2em;}
+
+        @media screen and (min-width: 992px) {
+            .header .top .left{
+                width: 30%;
+                left: -25%;
+            }
+            .header .top .right{
+                width: 25%;
+                left: 25%;
+            }
+            .header .top .right ul{display: inline-block; list-style: none;}
+            .header .top .right img{display: none;}
+            .p1{font-size: 3.5em;}
+            #search{width: 45em;}
+            #search input{width: 90%;}
+            .header .bottom{
+                background: #efefef;
+                width: 100%;
+                height: 3em;
+                margin-top: 6em;
+                padding-top: 0.4em;
+                border-bottom: #cccccc solid 1px;
+            }
+            .header .bottom i{
+                font-size: 2.5em;
+                margin: 0.4em 0.5em;
+                color: #666666;
+            }
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 991px){
+            .header .top .left{
+                width: 35%;
+                left: -15%;
+            }
+            .header .top .right{
+                width: 30%;
+                left: 20%;
+            }
+            .header .top .right ul{display: inline-block; list-style: none;}
+            .header .top .right img{display: none;}
+            .p1{font-size: 3.5em;}
+            #search{width: 45em;}
+            #search input{width: 85%;}
+            .header .bottom{display: none}
+        }
+
+        @media screen and (max-width: 768px){
+            .header .top .left{
+                width: 98%;
+                text-align: left;
+            }
+            .header .top .right{
+                width: 98%;
+                text-align: right;
+                top: -2em;
+            }
+            .header .top .right ul{display: none;}
+            .header .top .right img{display: inline;}
+            .p1{font-size: 2em;}
+            #search{width: 90%;}
+            #search input{width: 75%;}
+            .header .bottom{display: none}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="top">
+                <span class="left">
+                    <img src="images/BootCDN.png" alt="BootCDN |">&nbsp;
+                    <img src="images/又拍云.png" alt="又拍云">
+                </span>
+                <span class="right">
+                    <img src="images/菜单按钮.png" alt="菜单">
+                    <ul>
+                        <li>API</li>
+                        <li>博客</li>
+                        <li>关于</li>
+                    </ul>
+                </span>
+            </div>
+            <div class="middle">
+                <p class="p1">BootCDN</p>
+                <p class="p2">稳定、快速、免费的前端开源项目CDN加速服务</p>
+                <p class="p3">共收录了 <b>3051</b> 个前端开源项目</p>
+                <div id="search">
+                    <input type="text" placeholder="搜索开源库，例如：jQuery">
+                    <button><i class="iconfont icon-sou"></i></button>
+                </div>
+            </div>
+            <div class="bottom">
+                <i class="iconfont icon-bootstrap"></i>
+                <i class="iconfont icon-download_react-native"></i>
+                <i class="iconfont icon-jquery"></i>
+                <i class="iconfont icon-socialangular"></i>
+                <i class="iconfont icon-vuejs"></i>
+                <i class="iconfont icon-Backbone"></i>
+                <i class="iconfont icon-lodash"></i>
+                <i class="iconfont icon-pengyou"></i>
+            </div>
+        </div>
+        <div class="main">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

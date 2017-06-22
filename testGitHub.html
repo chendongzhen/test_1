@@ -3,8 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>测试GitHub</title>
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+        *{margin: 0px;padding: 0px;border: 0px;}
+        ul{
+            background-color: aquamarine;
+            text-align: center;
+        }
+        li{
+            background-color: bisque;
+            width: 80%;
+            margin: 5px 10% ;
+
+        }
+        @media screen and (min-width: 992px) {
+            ul{
+                width: 20%;
+            }
+        }
+        @media screen and (min-width: 768px){
+            ul{width:30%;}
+        }
+        @media screen and (max-width: 768px){
+            ul{
+                width: 40%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>这是测试用的文件</h1>
+    <div class="container">
+        <!--左边-->
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+        </ul>
+
+    </div>
 </body>
 </html>
